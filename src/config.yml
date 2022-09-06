@@ -1,0 +1,33 @@
+storage:
+  useuuid: false
+  type: "file"
+  mysql:
+    host: "localhost:3306"
+    database: "mariage"
+    user: "root"
+    password: ""
+
+delay:
+  tp: 5
+  home: 5
+  kiss: 10
+  gift: 10
+  marry: 30
+
+prices:
+  tp: 20
+  home: 20
+  sethome: 50
+  gift: 50
+  marry: 50
+
+allowedDim:
+- world
+- DIM1
+- DIM-1
+
+unallowedFaction:
+- WarZone
+
+unallowedFactionRelation:
+- enemy

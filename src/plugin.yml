@@ -1,0 +1,63 @@
+name: Mariage
+main: fr.loyto.Mariage.Main
+version: 1.0
+author: Loyto_SKHR
+description: Marriage
+softdepend: [Vault,CambatTag,Factions]
+
+commands:
+  marry:
+    description: Commande du plugin mariage
+    usage: /marry
+
+permissions:
+  marry.*:
+    description: Acces a tous le plugin mariage
+    default: op
+    children:
+      marry.list: true
+      marry.info: true
+      marry.priest: true
+      marry.tp: true
+      marry.home: true
+      marry.home.other: true
+      marry.chat: true
+      marry.gift: true
+      marry.reload: true
+      marry.listenchat: true
+  
+  marry.list:
+    description: Liste tous les mariages
+  
+  marry.info:
+    description: Affiche si le joueur est marie
+  
+  marry.priest:
+    description: Permet de marie des joueurs entre eux
+  
+  marry.divorceother:
+    description: Permet de faire divorcer un couple autre que le sien
+  
+  marry.tp:
+    description: Permet de se teleporter sur son/sa partenaire
+  
+  marry.home:
+    description: Permet de gerer le home du couple
+ 
+  marry.home.other:
+    description: Permet de se teleporter au home d'un couple
+  
+  marry.chat:
+    description: Permet d avoir un discussion en couple
+  
+  marry.kiss:
+    description: Permet d embrasser son/sa partenaire
+  
+  marry.gift:
+    description: Permet d offrie un cadeau a son/sa partenaire
+  
+  marry.reload:
+    description: Permet de recharger le fichier de configuration
+  
+  marry.spy:
+    description: Permet de lire les chat de couple
