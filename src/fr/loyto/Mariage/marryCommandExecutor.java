@@ -402,7 +402,7 @@ public class marryCommandExecutor implements CommandExecutor {
 											
 											PlayerInventory inv = partner.getInventory();
 											if(inv.firstEmpty() >= 0) {
-												player.getInventory().remove(item);
+												player.getInventory().removeItem(item);
 												inv.addItem(item);
 												Bukkit.getConsoleSender().sendMessage("[Mariage] (gift) " + player.getName() + " a donne " + item.getTypeId() + ":" + item.getData() + "x" + item.getAmount() + " a " + partner.getName());
 												
@@ -506,7 +506,7 @@ public class marryCommandExecutor implements CommandExecutor {
 									marry1.sendMessage(plugin.messages.get("info.msgacceptdeny"));
 								}
 								else {
-									player.sendMessage(plugin.messages.get("erroroneplayernotmoney"));
+									player.sendMessage(plugin.messages.get("error.oneplayernotmoney"));
 								}
 							}
 						}
